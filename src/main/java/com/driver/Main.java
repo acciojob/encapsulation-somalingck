@@ -1,14 +1,14 @@
-// Main.java
 package com.driver;
 
 public class Main {
     public static void main(String[] args) {
-        RWOnly rwObj = new RWOnly("Initial Name");
+        RWOnly obj = new RWOnly();
 
         // Use setter to set a value
-        rwObj.setName("New Name");
+        obj.setName("Aks");
 
-        // Use getter to print the value
-        System.out.println(rwObj.getName()); // Output: New Name
+        // Use getter to retrieve and print the value
+        String name = obj.getName();
+        System.out.println("Name: " + name);
     }
 }
